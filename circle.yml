@@ -1,11 +1,10 @@
-# The deployment section should be excluded until
-# it is explicitly included later on
+# Dont forget to create/set DOCKER_HUB_TRIGGER env var on circleCI
 
-#deployment:
-#  dockerhub:
-#    branch: master
-#    commands:
-#      - $DOCKER_HUB_TRIGGER
+deployment:
+  dockerhub:
+    branch: master
+    commands:
+      - $DOCKER_HUB_TRIGGER
 
 test:
   override:    
